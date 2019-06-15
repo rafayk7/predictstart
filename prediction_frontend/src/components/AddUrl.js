@@ -3,12 +3,23 @@ import { TextField, Button, Toolbar } from "@material-ui/core"
 import '../styles/App.css';
 
 export default class AddUrl extends Component {
+    
     constructor(props) {
         super(props)
 
         this.state = {
             url: "",
+            
         };
+
+        const styles = {
+            button: {
+             width: '150px'
+            },
+            urlField: {
+                width: '300px'
+            }
+           }
 
 
     }
@@ -39,25 +50,24 @@ export default class AddUrl extends Component {
         event.preventDefault();
         console.log("URL: " + this.state.url)
     }
+
+    
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <div className="login">
                     <span>
                         <h1>Enter your project URL here.</h1>
                         <TextField
                             id="url"
-                            label="url"
+                            label="URL"
                             value={this.state.url}
                             className="input"
                             onChange={this.handleChange}
                             margin="normal"
                             variant="outlined"
-                            color=""
                         />
                     </span>
-                </div>
-                <div className="login">
+                <div>
                     <span>
                         <Button
                             className="button"
