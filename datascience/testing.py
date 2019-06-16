@@ -144,6 +144,7 @@ print(data['goal'])
 
 
 data['titleLength'] = data['name'].apply(lambda x: len(str(x)))
+
 for i in data.keys():
 	print(i)
 	if data[i].dtype == 'float64' and i!='ID' and i!='state':
@@ -165,7 +166,8 @@ train = np.nan_to_num(train)
 test = np.nan_to_num(test)
 target_test = np.nan_to_num(target_test)
 target_train = np.nan_to_num(target_train)
-print(target_train)
+
+
 
 # def PolynomialRegression(degree=2, **kwargs):
 #     return make_pipeline(PolynomialFeatures(degree), LinearRegression(**kwargs))
@@ -179,14 +181,14 @@ print(target_train)
 
 # clf.fit(train, target_train)
 
-model = DecisionTreeClassifier(class_weight=None, max_depth=5,
-            max_features=None, max_leaf_nodes=8, min_samples_leaf=5,
-            min_samples_split=10, min_weight_fraction_leaf=0.0, splitter='random')
+# model = DecisionTreeClassifier(class_weight=None, max_depth=5,
+#             max_features=None, max_leaf_nodes=8, min_samples_leaf=5,
+#             min_samples_split=10, min_weight_fraction_leaf=0.0, splitter='random')
 
-depths = np.linspace(1,30, 30)
+# depths = np.linspace(1,30, 30)
 
-training_results = []
-testing_results  = []
+# training_results = []
+# testing_results  = []
 
 #x_train, x_test, y_train, y_test = train_test_split(train, labels, test_size=0.25)
 
@@ -218,13 +220,13 @@ testing_results  = []
 # plt.xlabel('max features')
 # plt.show()
 
-model.fit(train, target_train)
+# model.fit(train, target_train)
 
-prediction = model.predict(test)
+# prediction = model.predict(test)
 
 # print(pred_accuracy)
-pred_accuracy = model.score(test, target_test)
-print(pred_accuracy)
+# pred_accuracy = model.score(test, target_test)
+# print(pred_accuracy)
 
 # # print(clf.best_params_)
 
