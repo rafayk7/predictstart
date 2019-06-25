@@ -1,5 +1,6 @@
 from scraper import KickstarterScraper
 
 url = input("Pls enter url\n")
-x = KickstarterScraper(url)
+htmlpath = 'server/content.html'
+x = KickstarterScraper(html=htmlpath)
 x.scrape()

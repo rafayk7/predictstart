@@ -5,7 +5,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
-from sklearn.metrics import accuracy_score
 from sklearn.linear_model import LogisticRegression
 
 class Model:

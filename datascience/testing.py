@@ -33,8 +33,6 @@ def func2(item):
 data = pd.read_csv('ks-projects-201612.csv', encoding='cp1252')
 data.fillna('0')
 
-
-
 badrows = data[data['exists'].notnull()]
 
 data = pd.concat([data, badrows, badrows]).drop_duplicates(keep=False)
@@ -166,6 +164,9 @@ train = np.nan_to_num(train)
 test = np.nan_to_num(test)
 target_test = np.nan_to_num(target_test)
 target_train = np.nan_to_num(target_train)
+
+print(len(target_test))
+print(len(target_train))
 
 
 

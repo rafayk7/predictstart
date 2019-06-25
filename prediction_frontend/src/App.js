@@ -7,6 +7,7 @@ import logoImg from './images/logoimgimproved.png';
 import AboutMe from './components/AboutMe'
 import HowWorks from './components/HowWorks'
 
+
 import {
   Route,
   NavLink,
@@ -26,6 +27,7 @@ function App() {
         <Route path="/aboutMe" component={AboutMe} />
         <Route path="/howWorks" component={HowWorks} />
       </div>
+
     </HashRouter>
   );
 }
