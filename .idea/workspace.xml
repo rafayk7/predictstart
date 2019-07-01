@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2672f6cf-c0f0-472b-a05e-3009cfc5e96e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kickstarter_Website.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/Kickstarter real.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/data/feature_importances.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/data/feature_importances.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/data/finalmodel.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/data/finalmodel.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/data/finalmodel.sav" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/data/finalmodel.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/data/statistics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/data/statistics.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/graphs/categoryRatio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/graphs/countryFails.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/graphs/countryRatio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/graphs/countrysuccesses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/graphs/currencyRatio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/graphs/deadlineMonthRatio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/graphs/mainCategoryRatio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/graphs/monthLaunched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/kickstarter_pred.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/model.py.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/newtest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/results/decisiontree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/results/decisiontreeUpdated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/results/naivebayes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datascience/untitled.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_frontend/src/components/AddUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/components/AddUrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_frontend/src/components/HowWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/components/HowWorks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_frontend/src/components/ToolBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/components/ToolBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/categories.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/scraper.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datascience/predict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1714">
+              <caret line="278" column="38" selection-start-line="278" selection-start-column="38" selection-end-line="278" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/graph.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/datascience/predict.py" />
+        <option value="$PROJECT_DIR$/server/server.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kickstarter_Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter_Website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kickstarter_Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter_Website" type="462c0819:PsiDirectoryNode" />
+              <item name="datascience" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kickstarter_Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter_Website" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kickstarter_Website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2672f6cf-c0f0-472b-a05e-3009cfc5e96e" name="Default Changelist" comment="" />
+      <created>1561849824389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561849824389</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/graph.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datascience/predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1714">
+          <caret line="278" column="38" selection-start-line="278" selection-start-column="38" selection-end-line="278" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

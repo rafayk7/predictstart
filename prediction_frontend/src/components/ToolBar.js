@@ -26,7 +26,7 @@ export default class ToolBar extends Component {
         return (
             <HashRouter>
                 <div>
-                    <h1>predicto</h1>
+                    <h1>predictstart</h1>
                     <ul className="header">
                         <li><NavLink exact to="/">Predict</NavLink></li>
                         <div className="rightAlign">

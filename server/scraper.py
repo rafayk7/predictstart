@@ -94,27 +94,37 @@ class KickstarterScraper:
 
     def getGoal(self):
         if self.goal is None:
-
-            goal, currency = self.parseMoney(self.content.findAll('span', {
+            try:  
+                goal, currency = self.parseMoney(self.content.findAll('span', {
                                         "class": "inline-block hide-sm"})[0].findAll('span', {"class": "money"})[0].get_text())
+            except:
+                goal = 0
+                currency = ''
 
             self.goal = goal
         return self.goal
 
     def getBackers(self):
-        if self.backer is None:
-            backers = int(self.content.findAll('div', {
+        if self.backers is None:
+            try:
+                backers = int(self.content.findAll('div', {
                         "class": "block type-16 type-24-md medium soft-black"})[0].get_text().replace(',', ''))
+            except:
+                backers = 0
             self.backers = backers
 
         return backers
 
     def getDeadline(self):
         if self.deadline is None:
-            deadlineContainer = self.content.findAll(
+            try:
+                deadlineContainer = self.content.findAll(
                 'span', {"class": "block type-16 type-24-md medium soft-black"})[0].get_text()
-            deadline = (datetime.today() +
+                print("HOURS OR DAYS " + self.content.findAll('span', {'class': 'block navy-600 type-12 type-14-md lh3-lg'})[0].get_text())
+                deadline = (datetime.today() +
                         timedelta(days=int(deadlineContainer))).strftime(r"%Y-%m-%d")
+            except:
+                deadline = datetime.today()
 
             self.deadline = deadline
         return self.deadline
@@ -130,8 +140,11 @@ class KickstarterScraper:
 
                 content = BeautifulSoup(page.content, features="html.parser")
                 className = 'timeline__divider timeline__divider--launched timeline__divider--launched--' + self.mainCategory.lower()
-                launchDate = content.findAll('div', {'class': className})[0].findAll('time')[0].get_text()
-                launchDate = datetime.strptime(launchDate, r"%B %d, %Y").strftime(r"%Y-%m-%d")
+                try:
+                    launchDate = content.findAll('div', {'class': className})[0].findAll('time')[0].get_text()
+                    launchDate = datetime.strptime(launchDate, r"%B %d, %Y").strftime(r"%Y-%m-%d")
+                except:
+                    datetime.now()
 
             launched = str(launchDate)
 
@@ -164,7 +177,10 @@ class KickstarterScraper:
 
     def getCountry(self):
         if self.country is None:
-            location = self.location.split(',')[1].strip(' ')
+            try:
+                location = self.location.split(',')[1].strip(' ')
+            except:
+                location = ''
             countries = dict(countries_for_language('en'))
 
             if location=='UK':
@@ -192,8 +208,12 @@ class KickstarterScraper:
             location = locationCategoryContainer[5].get_text()
             category = locationCategoryContainer[4].get_text()  # 4
         except:
-            location = locationCategoryContainer[3].get_text()
-            category = locationCategoryContainer[2].get_text()
+            try:
+                location = locationCategoryContainer[3].get_text()
+                category = locationCategoryContainer[2].get_text()
+            except:
+                location = ''
+                category = ''
 
         return location, category
 
@@ -232,6 +252,24 @@ class KickstarterScraper:
 
         return pledged, currency
     
+    def getJsonResult(self):
+        json = {
+        "title": self.name,
+        "pledged": self.pledged,
+        "currency": self.currency,
+        "location": self.location,
+        "category": self.category,
+        "main_category": self.mainCategory,
+        "goal": self.goal,
+        "backers": self.backers,
+        "launched_date": self.launched,
+        "deadline_date": self.deadline,
+        "usd_pledged": self.usdpledged,
+        "country": self.country
+        }
+
+        return json
+    
     def displayInfo(self):
         print("NAME: " + self.name)
         print("PLEDGED: " + str(self.pledged))
@@ -246,7 +284,7 @@ class KickstarterScraper:
         print("USDPLEDGED: " + str(self.usdpledged))
         print("COUNTRY: " + str(self.country))
     
-    def scrape(self):
+    def scrape(self, display=False, json=True):
         #Must be called in this order
         self.getHTML()
         self.getName()
@@ -260,8 +298,13 @@ class KickstarterScraper:
         self.getUSDPledged()
         self.getCountry()
 
-        self.displayInfo()
-
+        if display and json:
+            self.displayInfo()
+            return self.getJsonResult()
+        if display and not json:
+            self.displayInfo()
+        if json and not display:
+            return self.getJsonResult()
 
 
 
