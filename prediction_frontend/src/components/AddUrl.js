@@ -155,6 +155,8 @@ class AddUrl extends Component {
 
                 <form onSubmit={this.handleSubmit.bind(this)}>
                     <span>
+                        <h2>predictstart is a website to make predictions on the success of any Kickstarter project.</h2>
+                        <h2>Along with a prediction, it also gives you the top 5 features that contribute to the prediction made, to tell you what you should improve upon.</h2>
                         <h1>Enter your project URL here.</h1>
                         <MuiThemeProvider theme={blackTheme}>
 

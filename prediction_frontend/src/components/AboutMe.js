@@ -21,15 +21,7 @@ export default class AboutMe extends Component {
             </h1>
                     <p>I am a second year Engineering Science at the University of Toronto interested in Data Science, Machine Learning, Web/Mobile Dev </p>
                     <p>and creating end-to-end solutions that incorporate all of these aspects.</p>
-
-                    <div className="login">
-                        <span>
-                            <ul className="linkBar">
-                                <li className="linkText"><IconButton variant="contained" color="default" className="buttonRouting"><Email /></IconButton></li>
-                                <li className="linkText"><IconButton>lol</IconButton></li>
-                            </ul>
-                        </span>
-                    </div>
+                    <p>Feel free to reach out for any questions, or for anything else :)</p>
                 </span>
             </div>
 
