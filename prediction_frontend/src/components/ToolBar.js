@@ -27,8 +27,6 @@ export default class ToolBar extends Component {
             <HashRouter>
                 <div>
                     <h1>predictstart</h1>
-                    <h2>predictstart is a website to make predictions on the success of any Kickstarter project.</h2>
-                    <h2>Along with a prediction, it also gives you the top 5 features that contribute to the prediction made, to tell you what you should improve upon.</h2>
                     <ul className="header">
                     <li><NavLink exact to="/">Predict</NavLink></li>
 
