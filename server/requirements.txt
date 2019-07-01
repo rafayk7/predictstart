@@ -6,3 +6,4 @@ flask_cors
 pandas
 shap
 gunicorn==19.9.0
+lightgbm==2.2.3
