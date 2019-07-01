@@ -12,5 +12,6 @@ SHAP values are used to calculate feature importance.
 
 # Screenshots
 
-![alt text](screenshots/frontpage_withurl.png)
+![alt text](screenshots/frontpage.png)
+![alt text](screenshots/loading.png)
 ![alt text](screenshots/results.png)
