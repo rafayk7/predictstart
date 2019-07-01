@@ -190,8 +190,8 @@ class AddUrl extends Component {
                         </span>
                     </div>
                 </form>
-                <h2>predictstart is a website to make predictions on the success of any Kickstarter project.</h2>
-                <h2>along with a prediction, it also gives you the top 5 features that contribute to the prediction made, to tell you what you should improve upon.</h2>
+                <p>predictstart is a website to make predictions on the success of any Kickstarter project.</p>
+                <p>along with a prediction, it also gives you the top 5 features that contribute to the prediction made, to tell you what you should improve upon.</p>
             </React.Fragment>
         );
     }
