@@ -6,8 +6,6 @@ import numpy as np
 import shap
 import operator
 
-
-
 class Predictor:
     def __init__(self, modelpath):
         self.model = pickle.load(open(modelpath, 'rb'))
@@ -20,13 +18,13 @@ class Predictor:
 
     def getCurrencyRates(self):
         currencyRates = []
-        with open('../server/config.json', 'r') as f:
+        with open('./config.json', 'r') as f:
             arr = json.load(f)
             return arr
 
     def preprocess(self, jsonInput):
         # Read saved dataframe with unique values
-        baseDF = pd.read_csv('../datascience/data/unique_value_df.csv', index_col=0)
+        baseDF = pd.read_csv('./datascience/data/unique_value_df.csv', index_col=0)
 
         cols_one_hot_encode = ['category', 'main_category', 'currency', 'country', 'launch_quarter', 'deadline_quarter',
                                'launch_hour']
@@ -138,7 +136,7 @@ class Predictor:
             axis=1)
 
         # Normalize
-        normalizer = pickle.load(open('../datascience/data/normalizer.pkl', 'rb'))
+        normalizer = pickle.load(open('./datascience/data/normalizer.pkl', 'rb'))
         norm = pd.DataFrame(normalizer.transform(baseDF))
 
         # Pretty

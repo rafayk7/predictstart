@@ -4,7 +4,7 @@ from flask_cors import CORS
 import sys
 from scraper import KickstarterScraper
 
-sys.path.insert(0, '../datascience/')
+sys.path.insert(0, './datascience/')
 from predict import Predictor
 
 app = Flask(__name__)
@@ -38,7 +38,8 @@ def send_prediction():
         json["error"] = False
     else:
         json['succeeded'] = False
-    prediction = Predictor('../datascience/data/finalmodel.pkl')
+        
+    prediction = Predictor('./datascience/data/finalmodel.pkl')
 
     if not succeeded:
         try:
