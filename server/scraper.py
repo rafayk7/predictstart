@@ -100,6 +100,8 @@ class KickstarterScraper:
             except:
                 goal = 0
                 currency = ''
+                print("GOAL NOT RECORDED")
+
 
             self.goal = goal
         return self.goal

@@ -28,7 +28,8 @@ export default class ToolBar extends Component {
                 <div>
                     <h1>predictstart</h1>
                     <ul className="header">
-                        <li><NavLink exact to="/">Predict</NavLink></li>
+                    <li><NavLink exact to="/">Predict</NavLink></li>
+
                         <div className="rightAlign">
                             <li><NavLink to="/howWorks">How it Works</NavLink></li>
                             <li><NavLink to="/aboutMe">About Me</NavLink></li>

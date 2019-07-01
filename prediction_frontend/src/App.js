@@ -42,9 +42,9 @@ function App() {
       <div>
         <BottomNavigation className="bottomNav">
           <Typography variant="button" style={{ margin: 'auto' }}>Made by: Rafay Kalim</Typography>
-          <BottomNavigationAction icon={<GithubIcon />} />
-          <BottomNavigationAction icon={<Email />} />
-          <BottomNavigationAction icon={<LinkedinIcon />} />
+          <a href="https://github.com/rafayk7"><BottomNavigationAction icon={<GithubIcon />} /></a>
+          <a href="mailto:rafay.kalim@mail.utoronto.ca"><BottomNavigationAction icon={<Email />} /></a>
+          <a href="https://linkedin.com/in/rafayk7"><BottomNavigationAction icon={<LinkedinIcon />} /></a>
         </BottomNavigation>
       </div>
     </HashRouter>

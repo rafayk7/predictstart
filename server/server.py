@@ -26,6 +26,7 @@ def send_prediction():
 
     try:
         json = KickstarterScraper(url).scrape(display=True, json=True)
+        json["error"] = False
     except:
         json = {"Error": "Error Scraping Data"}
         json['pledged'] = 0
@@ -34,6 +35,7 @@ def send_prediction():
     if json['pledged'] > json['goal']:
         json['succeeded'] = True
         succeeded = True
+        json["error"] = False
     else:
         json['succeeded'] = False
     prediction = Predictor('../datascience/data/finalmodel.pkl')
@@ -41,11 +43,13 @@ def send_prediction():
     if not succeeded:
         try:
             label, acc, imp_vals = prediction.predict(json)
+            json["error"] = False
         except:
             label = 2
             acc = True
             imp_vals = {}
-            json = {"Error": "Error Obtaining Prediction"}
+            json["error"] = True
+            json["ErrorMsg"]  = "Error Obtaining Prediction"
 
         json['label'] = label
         json['acc'] = acc

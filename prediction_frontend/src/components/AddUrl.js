@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Redirect, withRouter} from 'react-router-dom';
+import { Redirect, withRouter } from 'react-router-dom';
 
 import { TextField, Button } from "@material-ui/core";
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -14,8 +14,9 @@ import predictIcon from '../images/prediction.png';
 import LoadingScreen from 'react-loading-screen';
 
 import axios from 'axios';
-import {apiurl} from '../utilities/LoadingUtility'
+import { apiurl } from '../utilities/LoadingUtility'
 
+import Modal from 'react-modal';
 
 // import githubIcon from '../images/github_icon.svg'
 import '../styles/App.css';
@@ -30,6 +31,17 @@ const useStyles = makeStyles({
         textAlign: 'center'
     }
 });
+
+const customStyles = {
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)'
+    }
+  };
 
 const HomeIcon = (props) => (
     <SvgIcon {...props}>
@@ -48,7 +60,8 @@ class AddUrl extends Component {
             loading_message: 'Scraping data...',
             icon: scrapeIcon,
             toResults: false,
-            data: {}
+            data: {},
+            isModalOpen: false
         };
 
         const styles = {
@@ -75,46 +88,62 @@ class AddUrl extends Component {
     handleSubmit = event => {
         event.preventDefault();
 
-        this.setState({
-            loading: true
-        })
+        if(!this.state.url.startsWith('https://www.kickstarter.com/projects')){
+            this.setState({isModalOpen: true})
+        }
 
-        axios.post(apiurl+'/predict', {
-            url: this.state.url
-        }).then((response) => {
+        else {
             this.setState({
-                data: response.data,
-                loading: false,
-                loading_message: 'Scraping data...',
-                icon: scrapeIcon,
-                toResults: true
+                loading: true
             })
-            console.log(this.state.data)
-        })
-
-        setTimeout(() => {
-            this.setState({
-                loading_message: 'Making prediction...',
-                icon: predictIcon
+    
+            axios.post(apiurl + '/predict', {
+                url: this.state.url
+            }).then((response) => {
+                this.setState({
+                    data: response.data,
+                    loading: false,
+                    loading_message: 'Scraping data...',
+                    icon: scrapeIcon,
+                    toResults: true
+                })
+                console.log(this.state.data)
             })
-            console.log("CHANGED")
-        }, 1500)
-
-        console.log("URL: " + this.state.url)
+    
+            setTimeout(() => {
+                this.setState({
+                    loading_message: 'Making prediction...',
+                    icon: predictIcon
+                })
+                console.log("CHANGED")
+            }, 1500)
+    
+            console.log("URL: " + this.state.url)
+        }
     }
 
 
     render() {
-        if(this.state.toResults){
+        if (this.state.toResults) {
             // eslint-disable-next-line no-unused-expressions
             return <Redirect to={{
-                    pathname: '/results',
-                    state: this.state.data
-            }}/>
+                pathname: '/results',
+                state: this.state.data
+            }} />
         }
 
         return (
             <React.Fragment>
+                <Modal
+                    isOpen={this.state.modalIsOpen}
+                    onAfterOpen={this.afterOpenModal}
+                    onRequestClose={this.closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal"
+                >
+                <h2>Hello</h2>
+
+                </Modal>
                 <LoadingScreen
                     loading={this.state.loading}
                     bgColor='#f1f1f1'
@@ -137,6 +166,8 @@ class AddUrl extends Component {
                                 onChange={this.handleChange}
                                 margin="normal"
                                 variant="outlined"
+                                error={this.state.isModalOpen}
+                                helperText={this.state.isModalOpen? 'Wrong Url! Make sure it starts with https://www.kickstarter.com/projects' : ' '}
                             />
                         </MuiThemeProvider>
 

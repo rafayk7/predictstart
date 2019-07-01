@@ -14,10 +14,10 @@ ul.header li {
   list-style-type: none;
   margin: 0;
 }
+
 ul.header {
   background-color: #84DD63;
   padding: 0;
-
 }
 
 ul.header li a {
@@ -93,8 +93,12 @@ ul.headerLinks li a {
   float: right;
 }
 
+.leftAlign{
+  background-color: #0099FF
+}
+
 .input{
-  width: "150dp";
+  width: 50%;
 }
 
 .active {
@@ -110,8 +114,13 @@ ul.headerLinks li a {
   right:25%;
   display: inline;
   font-family: sans-serif;
+}
 
-
+mat-list {
+  flex-grow: 1;
+  border: 3px solid green;
+  overflow: auto;
+  display: flex;
 }
 
 @keyframes App-logo-spin {

@@ -2,43 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2672f6cf-c0f0-472b-a05e-3009cfc5e96e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kickstarter_Website.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/Kickstarter real.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/data/feature_importances.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/data/feature_importances.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/data/finalmodel.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/data/finalmodel.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/data/finalmodel.sav" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/data/finalmodel.sav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/data/statistics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datascience/data/statistics.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/graphs/categoryRatio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/graphs/countryFails.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/graphs/countryRatio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/graphs/countrysuccesses.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/graphs/currencyRatio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/graphs/deadlineMonthRatio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/graphs/mainCategoryRatio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/graphs/monthLaunched.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/kickstarter_pred.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/model.py.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/newtest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/results/decisiontree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/results/decisiontreeUpdated.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/results/naivebayes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/testing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datascience/untitled.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prediction_frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prediction_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prediction_frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prediction_frontend/src/components/AddUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/components/AddUrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prediction_frontend/src/components/HowWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/components/HowWorks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_frontend/src/components/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/components/ResultsPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prediction_frontend/src/components/ToolBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/components/ToolBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/categories.1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_frontend/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_frontend/src/styles/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,10 +25,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="435">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/scraper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="102" column="40" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +65,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getCur</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -86,14 +77,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/datascience/predict.py" />
+        <option value="$PROJECT_DIR$/server/scraper.py" />
         <option value="$PROJECT_DIR$/server/server.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1440" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -111,6 +102,11 @@
               <item name="kickstarter_Website" type="b2602c69:ProjectViewProjectNode" />
               <item name="kickstarter_Website" type="462c0819:PsiDirectoryNode" />
               <item name="datascience" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kickstarter_Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter_Website" type="462c0819:PsiDirectoryNode" />
+              <item name="prediction_frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kickstarter_Website" type="b2602c69:ProjectViewProjectNode" />
@@ -188,17 +184,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1864139" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" weight="0.27029702" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32871288" />
+      <window_info active="true" anchor="bottom" id="Python Console" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32871288" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -223,10 +220,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="102" column="40" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#63#0" expanded="true" />
           </folding>
